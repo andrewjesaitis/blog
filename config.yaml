@@ -25,3 +25,4 @@ params:
   linkedin: "andrewjesaitis"
   cover: "/images/background.jpg"
   logo: "/images/logo.jpg"
+  google_analytics_id: "UA-40063106-1"
