@@ -1,0 +1,27 @@
+languageCode: "en-us"
+contentdir: "content"
+publishdir: "public"
+builddrafts: false
+baseurl: "http://andrewjesaitis.com/"
+canonifyurls: true
+title: "Andrew Jesaitis"
+author: "Andrew Jesaitis"
+
+indexes:
+   category: "categories"
+   tag: "tags"
+params:
+  AuthorName: "Andrew"
+  github: "andrewjesaitis"
+  #bitbucket: "andrewjesaitis"
+  tumblr: "andrewjesaitis"
+  flickr: "andrewjesaitis"
+  twitter: "andrewjesaitis"
+  email: "andrew@andrewjesaitis.com"
+  description: "Powered by coffee."
+  about: "/pages/about"
+  projects: "/categories/projects"
+  #cv: "/pages/cv"
+  linkedin: "andrewjesaitis"
+  cover: "/images/background.jpg"
+  logo: "/images/logo.jpg"

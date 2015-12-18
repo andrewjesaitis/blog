@@ -1,2 +1,4 @@
-# blog
-Hugo powered blog source
+My Blog
+=========================
+
+Yep, it's mine.
