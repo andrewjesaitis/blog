@@ -1853,7 +1853,7 @@ html {
   max-height: 100%; }
 
 body {
-  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1em;
   color: #666666; }
 
@@ -1881,7 +1881,7 @@ h5,
 h5 {
   margin-top: .8em;
   margin-bottom: .4em;
-  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: light;
   color: #333333;
   -webkit-font-smoothing: antialiased; }
@@ -1997,7 +1997,7 @@ pre {
   color: #999999; }
 
 .intro {
-  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1.2em;
   font-weight: lighter;
   color: #999999; }
@@ -2600,7 +2600,7 @@ nav {
   margin-left: .2em;
   margin-bottom: .2em;
   font-size: 1em;
-  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Helvetica Neue", Arial, sans-serif; }
 
 @media all and (min-width: 1300px) {
   .content-wrapper {
