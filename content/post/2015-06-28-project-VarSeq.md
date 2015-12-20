@@ -16,11 +16,24 @@ In late 2013, Golden Helix started development on a new desktop tool called VarS
 
 I took on a broad leadership role in the project. I worked both as a Project Manager and as a Developer.
 
-{{< figure src="/images/project-varseq/varseq.png" caption="The VarSeq user interface balances data density with usability." >}}
+{{< figure src="/images/project-varseq/varseq.png" caption="The VarSeq user interface balances data density with usability. Rare variant analysis can be very complex, but by partitioning the filter chain and providing immeadiate feedback analysis can be performed rapidly." >}}
 
 As Project Manager I was responsible for generating feature-level specification through interactions with a variety of stakeholder. Next, I would work with a technical architect to scope and produce technical specifications. Working with the project's team of developers, I was then responsible for the creation of the product's roadmap and development timeline. And as development progress, I communicated the development's teams progress with sales, marketing and management.
 
-When possible I worked as a Developer on the project as well constructing key pieces of the product.
+When possible I worked as a developer on the project as well constructing key pieces of the product. Maintaining a deep understanding of the technical underpinnings of the product allowed me to be aware of what was easy, what was possible, and what was infeasible. This understanding helped to guide stakeholder conversations and prioritization of features during roadmap planning.
+
+### Workflow Development
+
+One of my primary responsibilites on VarSeq was to develop the analysis workflows that shipped with the software. By default, VarSeq ships with three templates to apply to data -- cancer gene panel, herediatary gene panel, and an rare disease workflow to be applied to whole genome or exome data. The goal of these templated workflows was to give the user a starting point for analysis which delivered good results across a wide range of input data. Additionally, these templates should be easily understood, so that users can extend and refine them to suit their individual needs.
+
+Stakeholder interviews drove the development from start to finish. A variety of users were recruited and interviewed about their analysis workflows. Representitive personas were constructed (bioinformatician, clincian, researcher, student). Additionaly, the common elements from each analysis type were combined in filters that would be applied to data. These "filter chains" were mocked up and each user was interviewed about the proposed elements. The filter chains were revised and implement as prototypes in an early version of the software. Users were interviewed while they used the software. Their feedback drove additional revisions to both the individual filtering parameters and the user interface used when running and customizing the analysis. Another round of prototyping was performed with users, before the designs were finalized.
+
+Each analysis type has a different objective and a different target user. For example, gene panels are often analyze by less experienced personel who have very strict parameters surrounding what variants are to be reported. Thus, the filter chain in this case consists of very simple filters that do little in the way of inference. Mainly variants of poor quality, outside of target amplicons, and those that do not alter the protein sequence are removed. The remaining variant are displayed in a very straight-forward manner grouped by gene.
+
+This contrasts with the rare disease template, which applies many filters both in sequence and parrallel to look for variants by inheritence type. Whole Exome and Genome sequencing is often performed by a very seasoned users who understand the trade-offs as filters perform more inference during analysis. A good example is looking for compound heterozygous mutations. It is two computationally expensive to examine all the pairs of variants on each gene, therefore deciding when to apply this filter is critically important. From our interviews, it is usually common to apply it after common, low quality, and non-deleterious variants have been removed. Since these users are more experience the data density is also much higher in this analysis template.
+
+Effective workflow and user interface design are critically important in scientific software. Maintaining clarity and simplicity, while not losing power-user features was my prime consideration as the Product Manager of VarSeq. 
+
 
 ### Transcript Annotation
 
