@@ -3,6 +3,6 @@
 .sass-cache
 .gist-cache
 .pygments-cache
-public
+hugo/public
 .sass-cache/
 bourbon
