@@ -6,3 +6,5 @@
 hugo/public
 .sass-cache/
 bourbon
+hugo/content/post
+*~
