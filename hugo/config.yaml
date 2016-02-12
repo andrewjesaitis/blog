@@ -4,6 +4,7 @@ publishdir: "public"
 builddrafts: false
 baseurl: "http://andrewjesaitis.com"
 canonifyurls: true
+theme: "hugo-uno"
 title: "Andrew Jesaitis"
 author: "Andrew Jesaitis"
 
