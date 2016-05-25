@@ -18,4 +18,4 @@ else
 fi;
 
 echo "Starting hugo server.."
-hugo server --bind 0.0.0.0 --baseUrl=192.168.99.101  --buildDrafts --buildFuture
+hugo server --bind 0.0.0.0  --buildDrafts --buildFuture
