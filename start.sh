@@ -5,8 +5,6 @@ cd /opt/$PROJECT/hugo
 hugo_output=$(
     hugo \
     --verbose \
-    --buildDrafts \
-    --buildFuture \
     2>&1
 )
 if [[ $(echo "$hugo_output" | grep -e "^ERROR:" | wc -l) -gt 0 ]]; then
@@ -18,4 +16,4 @@ else
 fi;
 
 echo "Starting hugo server.."
-hugo server --bind 0.0.0.0  --buildDrafts --buildFuture
+hugo server --bind 0.0.0.0

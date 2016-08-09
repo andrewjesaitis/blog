@@ -30,4 +30,4 @@ build: docker-build
 # push to google cloud storage with version tag and creds
 # push: build
 
-.PHONY: docker-build shell server genearte build push
+.PHONY: docker-build shell server generate build push
