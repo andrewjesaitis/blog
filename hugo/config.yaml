@@ -7,6 +7,8 @@ canonifyurls: true
 theme: "hugo-uno"
 title: "Andrew Jesaitis"
 author: "Andrew Jesaitis"
+permalinks:
+  post: /:year/:month/:title/
 
 indexes:
    category: "categories"
