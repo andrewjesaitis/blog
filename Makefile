@@ -19,7 +19,7 @@ generate: docker-build
 	find $(shell pwd)/hugo/content/post -type f -not -path '*/\.*' -execdir rm {} \;
 	cp -r $(BLOG_POST_LOCATION)/* $(shell pwd)/hugo/content/post
 	# Update posts to remove smart quotes
-	find $(shell pwd)/hugo/content/post/ -type f -execdir sed -i "" s/[”“]/'"'/g {} \;
+	find $(shell pwd)/hugo/content/post -type f -execdir sed -i "" s/[”“]/'"'/g {} \;
 
 server: generate
 	echo "Starting hugo server. Connect at `docker-machine ip dev`"
