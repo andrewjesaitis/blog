@@ -9,7 +9,6 @@ title: "Andrew Jesaitis"
 author: "Andrew Jesaitis"
 
 #pygmentsuseclasses: true
-#disqusshortname: "disqusName"
 pluralizelisttitles: true
 
 permalinks:
@@ -24,7 +23,7 @@ params:
   #highlightjs: true
   gravatar: "andrew@andrewjesaitis.com"
   github: "https://github.com/andrewjesaitis"
-  tumblr: "andrewjesaitis.tumblr.com"
+  tumblr: "http://andrewjesaitis.tumblr.com"
   flickr: "https://flickr.com/andrewjesaitis"
   twitter: "https://twitter.com/andrewjesaitis"
   email: "andrew@andrewjesaitis.com"
