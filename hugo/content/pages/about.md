@@ -10,4 +10,4 @@ I graduated from [Whitman College](https://www.whitman.edu/) with a degree in Ec
 
 I love living in Bozeman, MT. I never realized how lucky I had it until I left. Where else can you be climbing in 10 minutes, skiing in 20 minutes, or ice climbing in 40 minutes.
 
-Even though I'm powered by coffee, I can never pass up cup of good [Pu-erh](http://en.wikipedia.org/wiki/Pu-erh_tea). I like other teas too and rate them over at [Steepster](http://steepster.com/andrewjesaitis).
+![Andrew Jesaitis](images/about.png)
