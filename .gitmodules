@@ -3,4 +3,4 @@
 	url = git@github.com:andrewjesaitis/andrewjesaitis.github.io.git
 [submodule "hugo/themes/hot-chocolate"]
 	path = hugo/themes/hot-chocolate
-	url = https://github.com/andrewjesaitis/hot-chocolate.git
+	url = git@github.com:andrewjesaitis/hot-chocolate.git
