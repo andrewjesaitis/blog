@@ -4,28 +4,29 @@ publishdir: "public"
 builddrafts: false
 baseurl: "http://andrewjesaitis.com"
 canonifyurls: true
-theme: "hugo-uno"
+theme: "hot-chocolate"
 title: "Andrew Jesaitis"
 author: "Andrew Jesaitis"
+
+#pygmentsuseclasses: true
+#disqusshortname: "disqusName"
+pluralizelisttitles: true
+
 permalinks:
   post: /:year/:month/:title/
-
 indexes:
    category: "categories"
-   tag: "tags"
 params:
   AuthorName: "Andrew"
-  github: "andrewjesaitis"
-  #bitbucket: "andrewjesaitis"
-  tumblr: "andrewjesaitis"
-  flickr: "andrewjesaitis"
-  twitter: "andrewjesaitis"
+  cachebuster: false
+  dateform: "Jan 2, 2006"
+  dateformfull: "Mon Jan 2 2006 15:04:05 MST"
+  #highlightjs: true
+  gravatar: "andrew@andrewjesaitis.com"
+  github: "https://github.com/andrewjesaitis"
+  tumblr: "andrewjesaitis.tumblr.com"
+  flickr: "https://flickr.com/andrewjesaitis"
+  twitter: "https://twitter.com/andrewjesaitis"
   email: "andrew@andrewjesaitis.com"
-  description: "Powered by coffee."
-  about: "/pages/about"
-  projects: "/categories/projects"
-  #cv: "/pages/cv"
-  linkedin: "andrewjesaitis"
-  cover: "/images/background.jpg"
-  logo: "/images/logo.jpg"
-  google_analytics_id: "UA-40063106-1"
+  description: "Powered by coffee."  
+  linkedin: "https://linkedin.com/in/andrewjesaitis"
