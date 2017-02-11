@@ -1,8 +1,10 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 RUN apt-get dist-upgrade -y
 RUN apt-get update
-RUN apt-get install -y curl git mercurial
+RUN apt-get install -y curl git mercurial python-pip
+
+RUN pip install Pygments
 
 ENV GO_VERSION 1.5.2
 ENV GO_TAR go$GO_VERSION.linux-amd64.tar.gz
