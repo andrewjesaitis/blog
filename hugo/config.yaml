@@ -8,7 +8,9 @@ theme: "hot-chocolate"
 title: "Andrew Jesaitis"
 author: "Andrew Jesaitis"
 
-#pygmentsuseclasses: true
+PygmentsUseClasses: false
+PygmentsCodeFences: true
+PygmentsStyle: "default"
 pluralizelisttitles: true
 
 permalinks:
@@ -20,7 +22,6 @@ params:
   cachebuster: false
   dateform: "Jan 2, 2006"
   dateformfull: "Mon Jan 2 2006 15:04:05 MST"
-  #highlightjs: true
   gravatar: "andrew@andrewjesaitis.com"
   github: "https://github.com/andrewjesaitis"
   tumblr: "http://andrewjesaitis.tumblr.com"
