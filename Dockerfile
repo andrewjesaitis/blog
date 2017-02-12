@@ -1,21 +1,16 @@
-FROM ubuntu:16.04
+FROM jfloff/alpine-python:2.7-slim
 
-RUN apt-get dist-upgrade -y
-RUN apt-get update
-RUN apt-get install -y curl git mercurial python-pip
+MAINTAINER Andrew Jesaitis
 
-RUN pip install Pygments
+RUN pip install pygments
 
-ENV GO_VERSION 1.5.2
-ENV GO_TAR go$GO_VERSION.linux-amd64.tar.gz
-ENV GOPATH /opt/go
-ENV PATH $GOPATH/bin:$NODE_PATH:/usr/local/go/bin:$PATH
+RUN apk --update add curl tar 
+RUN curl -L https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Linux-64bit.tar.gz | tar xvz
+RUN apk del curl tar
+RUN mv /hugo_0.18.1_linux_amd64/hugo_0.18.1_linux_amd64 /bin/hugo
+RUN rm -fr /hugo_0.18.1_linux_amd64bi
+RUN rm -rf /var/cache/apk/*
+
 EXPOSE 1313
 
-# It's currently very difficult to pin a go project to a version. You need to manually version all dependencies
-# without godep, this is awful.
-RUN mkdir -p /tmp/go && curl -o /tmp/go/$GO_TAR https://storage.googleapis.com/golang/$GO_TAR
-RUN tar -C /usr/local -xzf /tmp/go/$GO_TAR
-RUN go get -v github.com/spf13/hugo
-
-WORKDIR /opt/blog
+ENTRYPOINT ["/bin/hugo"]
