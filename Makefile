@@ -4,15 +4,12 @@ BLOG_POST_LOCATION = ~/Dropbox/Notes/content
 docker-build:
 	docker build --tag=$(IMAGE) .
 
-commit-public:
+deploy-s3:
 	cd hugo/public && \
-	git pull && \
-	git add -A && \
-	git commit -m "rebuilding site `date`" && \
-	git push origin master
+	s3deploy -v -bucket andrewjesaitis-blog --public-access --distribution-id $BLOG_CF_DIST_ID
 
-update-subrepos:
-	git add hugo/public hugo/themes
+update-theme:
+	git add hugo/themes
 	git commit -m "Update subrepos"
 	git push
 
@@ -26,6 +23,6 @@ generate: docker-build
 server: generate
 	docker run --rm -it -p 1313:1313 --name hugo -v $(shell pwd)/hugo:/blog $(IMAGE) server --watch --bind='0.0.0.0'  -s /blog
 
-deploy: generate commit-public update-subrepos
+deploy: generate deploy-s3
 
-.PHONY: docker-build server generate deploy commit-public update-subrepos sync-dropbox
+.PHONY: docker-build server generate deploy deploy-s3 update-theme sync-dropbox
