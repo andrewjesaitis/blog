@@ -2,7 +2,7 @@ languageCode: "en-us"
 contentdir: "content"
 publishdir: "public"
 builddrafts: false
-baseurl: "http://andrewjesaitis.com"
+baseurl: "https://andrewjesaitis.com"
 canonifyurls: true
 theme: "hot-chocolate"
 title: "Andrew Jesaitis"
