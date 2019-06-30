@@ -6,7 +6,7 @@ docker-build:
 
 deploy-s3:
 	cd hugo/public && \
-	s3deploy -v -bucket andrewjesaitis-blog --public-access --distribution-id $BLOG_CF_DIST_ID
+	s3deploy -v -bucket andrewjesaitis-blog --public-access --distribution-id $(BLOG_CF_DIST_ID)
 
 update-theme:
 	git add hugo/themes
