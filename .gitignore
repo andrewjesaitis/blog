@@ -4,7 +4,8 @@
 .gist-cache
 .pygments-cache
 hugo/public
+hugo/static
 .sass-cache/
 bourbon
-hugo/content/post
+hugo/content
 *~
