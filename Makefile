@@ -14,10 +14,10 @@ update-theme:
 	git push
 
 sync-dropbox:
-	rsync -a --update --delete hugo/content ~/Dropbox/Notes/content
+	rsync -a --update --delete ~/Dropbox/Notes/content ./hugo/
+	rsync -a --update --delete ~/Dropbox/Notes/images ./hugo/static/
 
-generate: docker-build
-	rsync -a --update --delete $(BLOG_POST_LOCATION) $(shell pwd)/hugo/
+generate: docker-build sync-dropbox
 	docker run --rm -it -v $(shell pwd)/hugo:/blog $(IMAGE) -s /blog
 
 server: generate
