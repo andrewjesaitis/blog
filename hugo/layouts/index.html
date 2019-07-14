@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+<section class="main">
+  <div class="container">
+    <div class="content">
+      <div class="front-snap">
+        <div class="page-heading">Latest Snapshot</div>
+        {{ range first 1 (where site.RegularPages "Type" "==" "snapshots") }}
+          <a href="{{ .Permalink }}">{{ .Content }}</a>
+        {{ end }}
+      </div>
+    <div class="front-list">
+      <div class="page-heading">Recent Posts</div>
+      <ul>
+        {{ range first 5 (where site.RegularPages "Type" "==" "posts") }}
+          {{ partial "li.html" . }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+{{ partial "footer.html" . }}

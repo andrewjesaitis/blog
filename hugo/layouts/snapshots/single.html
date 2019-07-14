@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+
+<a name="photo">
+<section class="main post non-narrow zero-top-spacing">
+  <div class="container">
+    <div class="content">
+      <div class="front-matter">
+        <div class="title-container">
+          <div class="page-heading">{{ .Date.Format .Site.Params.dateform }}</div>
+          <p>{{ if .PrevInSection }}<a href="{{ .PrevInSection.Permalink }}#photo">Prev</a>{{ end }} | 
+           {{if .NextInSection }}<a href=" {{ .NextInSection.Permalink }}#photo">Next</a>{{ end }}
+        </p>
+        </div>
+      </div>
+      <div class="markdown">
+        {{ .Content }}       
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}

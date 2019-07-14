@@ -7,25 +7,44 @@ canonifyurls: true
 theme: "hot-chocolate"
 title: "Andrew Jesaitis"
 author: "Andrew Jesaitis"
-
 PygmentsUseClasses: false
 PygmentsCodeFences: true
 PygmentsStyle: "default"
 pluralizelisttitles: true
 
 permalinks:
-  post: /:year/:month/:title/
+  post: /:year/:month/:day/:title/
 indexes:
    category: "categories"
 params:
+  mainSections: "post"
   AuthorName: "Andrew"
   cachebuster: false
+  extracssfiles:
+    - "/css/custom.css"
   dateform: "Jan 2, 2006"
   dateformfull: "Mon Jan 2 2006 15:04:05 MST"
   gravatar: "andrew@andrewjesaitis.com"
   github: "https://github.com/andrewjesaitis"
-  tumblr: "http://andrewjesaitis.tumblr.com"
   flickr: "https://flickr.com/andrewjesaitis"
   email: "andrew@andrewjesaitis.com"
   description: "Powered by coffee."  
   linkedin: "https://linkedin.com/in/andrewjesaitis"
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /pages/about/
+    - identifier: posts
+      name: Posts
+      url: /posts/
+    - identifier: projects
+      name: Projects
+      url: /categories/projects/
+    - identifiers: snapshots
+      name: Snapshots
+      url: /snapshots/
+    - identifiers: tracks
+      name: Tracks
+      url: /tracks/
