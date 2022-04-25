@@ -1,5 +1,8 @@
 IMAGE = andrewjesaitis/hugo
-BLOG_POST_LOCATION = ~/Dropbox/Notes/content
+BLOG_CONTENT_LOCATION = ~/Dropbox/Notes
+
+snapshots:
+	python3 snapshot_templater.py --template $(BLOG_CONTENT_LOCATION)/templates/snapshot.tmpl --directory $(BLOG_CONTENT_LOCATION)/images/snapshots/ --output $(BLOG_CONTENT_LOCATION)/content/snapshots/
 
 docker-build:
 	docker build --tag=$(IMAGE) .
